@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes zoomIn {
+            from {}
+            to {
+                width: 80%;
+            }
+        }
+        
+        @keyframes zoomOut {
+            from {}
+            to {
+                width: 200px;
+            }
+        }
+        
+        .zoomIn {
+            z-index: 99;
+            position: absolute;
+            animation: zoomIn 3s;
+        }
+        
+        .zoomOut {
+            animation: zoomOut 2s;
+        }
+        
+        .wrap {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .wrap .div {
+            width: 200px;
+            height: 180px;
+            border-radius: 20px;
+        }
+        
+        .div1 {
+            background: #c23531;
+        }
+        
+        .div2 {
+            background: #2f4554;
+        }
+        
+        .div3 {
+            background: #61a0a8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="wrap">
+            <div class="div1 div zoomOut"></div>
+            <div class="div2 div zoomOut"></div>
+            <div class="div3 div zoomOut"></div>
+        </div>
+    </div>
+
+
+    <script src="jquery-3.2.1.min.js"></script>
+
+</body>
+
+</html>
