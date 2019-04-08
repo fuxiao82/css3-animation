@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding:0;
+}
+div {  position: absolute;  width: 90px;
+    color:red;
+    height   : 100px;
+    right: 0;  margin: 0;
+    z-index: 99;
+    text-index: 12px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 88px;
+}
